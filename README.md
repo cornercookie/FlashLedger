@@ -2,6 +2,10 @@
 
 可攜式桌面記帳軟體，可放在隨身碟攜帶，無需安裝、無需連網、無雲端，資料全存在本地 SQLite。
 
+## 下載
+
+Windows 直接下載 [最新版 flashledger.exe](https://github.com/cornercookie/FlashLedger/releases/latest)。只需這一個檔案，不必複製整個 `target/release`。第一次開啟會在 exe 旁邊建立 `data/app.db`。電腦需已安裝 [WebView2](https://developer.microsoft.com/microsoft-edge/webview2/)（Windows 11 通常已有）。未簽章，第一次執行時 Windows 可能跳出 SmartScreen 警告。
+
 ## 技術棧
 
 - 語言：Rust
