@@ -1,0 +1,38 @@
+{
+  "$schema": "../../node_modules/tauri-types/schema.json",
+  "productName": "隨身帳 (FlashLedger)",
+  "version": "0.1.0",
+  "identifier": "com.flashledger.app",
+  "build": {
+    "frontendDist": "../dist",
+    "devUrl": "http://localhost:5173",
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "隨身帳 (FlashLedger)",
+        "width": 1000,
+        "height": 700,
+        "resizable": true,
+        "fullscreen": false
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self' 'unsafe-inline' 'unsafe-eval' data: filesystem: http: https: ws: wss: tauri:;"
+    }
+  },
+  "plugins": {
+    "dialog": {
+      "allow": ["save", "open"]
+    },
+    "fs": {
+      "scope": ["$APP/*", "$APP/data/*"]
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all"
+  }
+}

@@ -1,0 +1,30 @@
+[package]
+name = "flashledger"
+version = "0.1.0"
+description = "隨身帳 (FlashLedger) - 可攜式桌面記帳軟體"
+edition = "2021"
+
+[dependencies]
+# Tauri v2 框架。custom-protocol 由下方 feature 開啟，不要寫死在依賴上，
+# 否則 `tauri dev` 無法用 --no-default-features 切回 devUrl。
+tauri = { version = "2" }
+
+# SQLite 操作 (bundled = 內建 SQLite，不需系統安裝)
+rusqlite = { version = "0.33", features = ["bundled"] }
+
+# Excel 匯出
+rust_xlsxwriter = "0.24"
+
+# 序列化與日期
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+chrono = { version = "0.4", features = ["serde"] }
+
+[build-dependencies]
+tauri-build = { version = "2" }
+
+[features]
+# 發行版預設開啟。沒有這個 feature 時，Tauri 把整個 release 當成 dev，
+# 視窗會載入 devUrl（http://localhost:5173），而不是嵌入的 dist。
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]

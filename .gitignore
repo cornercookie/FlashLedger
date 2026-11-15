@@ -1,0 +1,19 @@
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Rust / Tauri build output (includes the release exe and local data/app.db)
+src-tauri/target/
+
+# Local ledger database, wherever it sits
+data/
+*.db
+*.db-journal
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+*.suo
+.idea/
+.vscode/

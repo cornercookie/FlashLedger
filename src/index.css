@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Microsoft JhengHei', 'Segoe UI', sans-serif;
+  }
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-200 p-6;
+  }
+  .btn-primary {
+    @apply px-4 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors;
+  }
+  .btn-danger {
+    @apply px-3 py-1 bg-red-100 text-red-600 rounded text-sm hover:bg-red-200 transition-colors;
+  }
+  .amount-positive {
+    @apply text-green-600 font-semibold;
+  }
+  .amount-negative {
+    @apply text-red-600 font-semibold;
+  }
+}
