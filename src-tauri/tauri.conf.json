@@ -1,7 +1,7 @@
 {
   "$schema": "../../node_modules/tauri-types/schema.json",
   "productName": "隨身帳 (FlashLedger)",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "identifier": "com.flashledger.app",
   "build": {
     "frontendDist": "../dist",

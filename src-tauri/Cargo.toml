@@ -1,6 +1,6 @@
 [package]
 name = "flashledger"
-version = "0.1.0"
+version = "0.1.1"
 description = "隨身帳 (FlashLedger) - 可攜式桌面記帳軟體"
 edition = "2021"
 

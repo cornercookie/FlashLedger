@@ -1,7 +1,7 @@
 {
   "name": "flashledger",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "隨身帳 (FlashLedger) - 可攜式桌面記帳軟體",
   "type": "module",
   "scripts": {
@@ -25,5 +25,8 @@
     "tailwindcss": "^3.4.17",
     "typescript": "^7.0.2",
     "vite": "^8.3.8"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.3.0"
   }
 }

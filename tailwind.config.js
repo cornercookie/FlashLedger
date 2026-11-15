@@ -20,7 +20,7 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Microsoft JhengHei', 'sans-serif'],
+        sans: ['Inter', 'Microsoft JhengHei', 'system-ui', 'sans-serif'],
       },
     },
   },
